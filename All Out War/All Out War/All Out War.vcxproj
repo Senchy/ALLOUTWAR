@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8E7D24F9-D71F-4798-8C24-5261487BE4E7}</ProjectGuid>
+    <RootNamespace>AllOutWar</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;C:\OgreSDK_vc10_v1-8-1\include;C:\OgreSDK_vc10_v1-8-1\include\OIS;C:\OgreSDK_vc10_v1-8-1\include\OGRE;C:\OgreSDK_vc10_v1-8-1\Samples\Common\include;C:\OgreSDK_vc10_v1-8-1\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)/All Out War.pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\OgreSDK_vc10_v1-8-1\lib\debug;C:\OgreSDK_vc10_v1-8-1\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreTerrain_d.lib;OgreMain_d.lib;OIS_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "C:\OgreSDK_vc10_v1-8-1\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>include;C:\OgreSDK_vc10_v1-8-1\include;C:\OgreSDK_vc10_v1-8-1\include\OIS;C:\OgreSDK_vc10_v1-8-1\include\OGRE;C:\OgreSDK_vc10_v1-8-1\Samples\Common\include;C:\OgreSDK_vc10_v1-8-1\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\OgreSDK_vc10_v1-8-1\lib\release;C:\OgreSDK_vc10_v1-8-1\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreTerrain.lib;OgreMain.lib;OIS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "C:\OgreSDK_vc10_v1-8-1\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AI\Graph.h" />
+    <ClInclude Include="include\AI\Graph_Node.h" />
+    <ClInclude Include="include\AllOutWar.h" />
+    <ClInclude Include="include\BaseApplication.h" />
+    <ClInclude Include="include\ContainerStructs.h" />
+    <ClInclude Include="include\Entities\Base_Animation.h" />
+    <ClInclude Include="include\Entities\Base_Ent.h" />
+    <ClInclude Include="include\Entities\Dynamic Entities\Citizen.h" />
+    <ClInclude Include="include\Entities\Dynamic Entities\Dynamic_Ent.h" />
+    <ClInclude Include="include\Entities\Dynamic Entities\FireBall.h" />
+    <ClInclude Include="include\Entities\Static Entities\Static_Ent.h" />
+    <ClInclude Include="include\Entities\Static Entities\Town_Center.h" />
+    <ClInclude Include="include\Entities\Static Entities\Tree.h" />
+    <ClInclude Include="include\Entity_Factory.h" />
+    <ClInclude Include="include\Faction\Faction.h" />
+    <ClInclude Include="include\Faction\FactionAI.h" />
+    <ClInclude Include="include\Faction\GUI\Base_GUI.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Button.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Cursor.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Image.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Items\MiniMapNode.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Panel.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Items\ScrollBar.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\CommandMenu.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\MiniMap.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\ResearchTree.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\SelectedMenu.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\SideMenu.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\Table.h" />
+    <ClInclude Include="include\Faction\GUI\GUI_Object\TownListInfo.h" />
+    <ClInclude Include="include\Faction\GUI\Player_GUI.h" />
+    <ClInclude Include="include\Faction\Player.h" />
+    <ClInclude Include="include\LinkList.h" />
+    <ClInclude Include="include\Physics\Basic_Body.h" />
+    <ClInclude Include="include\Physics\Collisions_Manager.h" />
+    <ClInclude Include="include\Physics\Height_Map.h" />
+    <ClInclude Include="include\Physics\HM_Plane.h" />
+    <ClInclude Include="include\Physics\Physics_Formulas.h" />
+    <ClInclude Include="include\Physics\Shape_Cylinder.h" />
+    <ClInclude Include="include\Physics\Shape_Sphere.h" />
+    <ClInclude Include="include\Physics\Shape_Square.h" />
+    <ClInclude Include="include\Physics\Vector.h" />
+    <ClInclude Include="include\Terrain.h" />
+    <ClInclude Include="res\Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AI\Graph.cpp" />
+    <ClCompile Include="src\AI\Graph_Node.cpp" />
+    <ClCompile Include="src\AllOutWar.cpp" />
+    <ClCompile Include="src\BaseApplication.cpp" />
+    <ClCompile Include="src\Entities\Base_Animation.cpp" />
+    <ClCompile Include="src\Entities\Base_Ent.cpp" />
+    <ClCompile Include="src\Entities\Dynamic Entities\Citizen.cpp" />
+    <ClCompile Include="src\Entities\Dynamic Entities\Dynamic_Ent.cpp" />
+    <ClCompile Include="src\Entities\Dynamic Entities\FireBall.cpp" />
+    <ClCompile Include="src\Entities\Static Entities\Static_Ent.cpp" />
+    <ClCompile Include="src\Entities\Static Entities\Town_Center.cpp" />
+    <ClCompile Include="src\Entities\Static Entities\Tree.cpp" />
+    <ClCompile Include="src\Entity_Factory.cpp" />
+    <ClCompile Include="src\Faction\Faction.cpp" />
+    <ClCompile Include="src\Faction\FactionAI.cpp" />
+    <ClCompile Include="src\Faction\GUI\Base_GUI.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Button.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Cursor.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Image.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Items\MiniMapNode.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Panel.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Items\ScrollBar.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\CommandMenu.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\MiniMap.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\ResearchTree.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\SelectedMenu.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\SideMenu.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\Table.cpp" />
+    <ClCompile Include="src\Faction\GUI\GUI_Object\TownListInfo.cpp" />
+    <ClCompile Include="src\Faction\GUI\Player_GUI.cpp" />
+    <ClCompile Include="src\Faction\Player.cpp" />
+    <ClCompile Include="src\Physics\Basic_Body.cpp" />
+    <ClCompile Include="src\Physics\Collisions_Manager.cpp" />
+    <ClCompile Include="src\Physics\Height_Map.cpp" />
+    <ClCompile Include="src\Physics\HM_Plane.cpp" />
+    <ClCompile Include="src\Physics\Physics_Formulas.cpp" />
+    <ClCompile Include="src\Physics\Shape_Cylinder.cpp" />
+    <ClCompile Include="src\Physics\Shape_Shere.cpp" />
+    <ClCompile Include="src\Physics\Shape_Square.cpp" />
+    <ClCompile Include="src\Terrain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\ReadMe.txt" />
+    <None Include="res\AllOutWar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\AllOutWar.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

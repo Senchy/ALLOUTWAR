@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{df0fee42-60ce-454f-9f2b-e8c4159d542a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Static Entities">
+      <UniqueIdentifier>{133471dd-b4b8-4217-ba85-36322e322cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Dynamic Entities">
+      <UniqueIdentifier>{bc942013-7b17-463c-8a6c-1db98a168901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{89365498-bf48-4bc2-a672-26c65301663e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Dynamic Entities">
+      <UniqueIdentifier>{00935cad-372d-4260-a794-ea72896d2e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Static Entities">
+      <UniqueIdentifier>{b6018958-5c4a-40b5-a3a5-19a5d640d0d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{1e63fd95-86b0-4e02-9af0-01699d8fe19e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Phyisics">
+      <UniqueIdentifier>{f40357c8-a559-4534-939c-8835d76c5226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AI">
+      <UniqueIdentifier>{37a11f57-e320-47b6-b74b-8005da451071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faction">
+      <UniqueIdentifier>{a5287cdd-4542-40ed-bcb1-3186e847b49d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faction">
+      <UniqueIdentifier>{664e7097-3a7e-4be6-843b-2a108b4c4258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faction\GUI">
+      <UniqueIdentifier>{3224130a-fe6b-4ba4-8e27-7ec75d5cdfa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faction\GUI">
+      <UniqueIdentifier>{3f4cb7c2-a5be-4ff3-8d82-7fb2cff07157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faction\GUI\GUI_Object">
+      <UniqueIdentifier>{e5758ee7-398c-4463-a42b-584fd2c7d0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faction\GUI\GUI_Items">
+      <UniqueIdentifier>{d6891701-e56c-4a60-b894-37c18e34c1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faction\GUI\GUI_Object">
+      <UniqueIdentifier>{b5c82900-0c89-401b-9c4b-7243b0949136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faction\GUI\GUI_Items">
+      <UniqueIdentifier>{c3a39080-68d9-4ae0-a80d-a3c9db9f4eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AI">
+      <UniqueIdentifier>{ea7bdf8f-e165-449c-9bac-7b0606caf8c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AllOutWar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BaseApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entity_Factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Dynamic Entities\Citizen.h">
+      <Filter>Header Files\Entities\Dynamic Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Dynamic Entities\Dynamic_Ent.h">
+      <Filter>Header Files\Entities\Dynamic Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Static Entities\Static_Ent.h">
+      <Filter>Header Files\Entities\Static Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Static Entities\Town_Center.h">
+      <Filter>Header Files\Entities\Static Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Static Entities\Tree.h">
+      <Filter>Header Files\Entities\Static Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Basic_Body.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Collisions_Manager.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Height_Map.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\HM_Plane.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Physics_Formulas.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Shape_Cylinder.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Shape_Sphere.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Shape_Square.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\Vector.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Dynamic Entities\FireBall.h">
+      <Filter>Header Files\Entities\Dynamic Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AI\Graph.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AI\Graph_Node.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinkList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ContainerStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\Player.h">
+      <Filter>Header Files\Faction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\Faction.h">
+      <Filter>Header Files\Faction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\FactionAI.h">
+      <Filter>Header Files\Faction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\Player_GUI.h">
+      <Filter>Header Files\Faction\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\Base_GUI.h">
+      <Filter>Header Files\Faction\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\CommandMenu.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\MiniMap.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\SelectedMenu.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\SideMenu.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\Table.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Button.h">
+      <Filter>Header Files\Faction\GUI\GUI_Items</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Cursor.h">
+      <Filter>Header Files\Faction\GUI\GUI_Items</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Image.h">
+      <Filter>Header Files\Faction\GUI\GUI_Items</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Items\MiniMapNode.h">
+      <Filter>Header Files\Faction\GUI\GUI_Items</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Items\Panel.h">
+      <Filter>Header Files\Faction\GUI\GUI_Items</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Items\ScrollBar.h">
+      <Filter>Header Files\Faction\GUI\GUI_Items</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\ResearchTree.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Faction\GUI\GUI_Object\TownListInfo.h">
+      <Filter>Header Files\Faction\GUI\GUI_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Base_Animation.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entities\Base_Ent.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AllOutWar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity_Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Dynamic Entities\Citizen.cpp">
+      <Filter>Source Files\Entities\Dynamic Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Dynamic Entities\Dynamic_Ent.cpp">
+      <Filter>Source Files\Entities\Dynamic Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Static Entities\Static_Ent.cpp">
+      <Filter>Source Files\Entities\Static Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Static Entities\Town_Center.cpp">
+      <Filter>Source Files\Entities\Static Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Static Entities\Tree.cpp">
+      <Filter>Source Files\Entities\Static Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Basic_Body.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Collisions_Manager.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Height_Map.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\HM_Plane.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Physics_Formulas.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Shape_Cylinder.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Shape_Shere.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\Shape_Square.cpp">
+      <Filter>Source Files\Phyisics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Dynamic Entities\FireBall.cpp">
+      <Filter>Source Files\Entities\Dynamic Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AI\Graph.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AI\Graph_Node.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\Player.cpp">
+      <Filter>Source Files\Faction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\Faction.cpp">
+      <Filter>Source Files\Faction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\FactionAI.cpp">
+      <Filter>Source Files\Faction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\Player_GUI.cpp">
+      <Filter>Source Files\Faction\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\Base_GUI.cpp">
+      <Filter>Source Files\Faction\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\CommandMenu.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\MiniMap.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\SelectedMenu.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\SideMenu.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\Table.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Button.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Cursor.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Image.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Items\MiniMapNode.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Items\Panel.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Items\ScrollBar.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\ResearchTree.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Faction\GUI\GUI_Object\TownListInfo.cpp">
+      <Filter>Source Files\Faction\GUI\GUI_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Base_Animation.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Base_Ent.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\ReadMe.txt" />
+    <None Include="res\AllOutWar.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\AllOutWar.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

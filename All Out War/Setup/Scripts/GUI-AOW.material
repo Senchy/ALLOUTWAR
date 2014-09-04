@@ -1,0 +1,310 @@
+material AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            lighting off
+            scene_blend alpha_blend
+            depth_check off
+            
+            texture_unit
+            {
+                tex_address_mode clamp
+                filtering linear linear none
+            }
+        }
+    }
+}
+material AOW/MultiSelectCursor : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_SelectScreen.png
+            }
+        }
+    }
+}
+material AOW/Cursor_Normal : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Cursor_Normal.png
+            }
+        }
+    }
+}
+
+material AOW/Cursor_YellowClick : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Cursor_Clicking1.png
+            }
+        }
+    }
+}
+
+material AOW/Cursor_BlueClick : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Cursor_Clicking2.png
+            }
+        }
+    }
+}
+
+material AOW/Cursor_RedClick : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Cursor_Clicking3.png
+            }
+        }
+    }
+}
+
+material AOW/Cursor_GreenClick : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Cursor_Clicking4.png
+            }
+        }
+    }
+}
+
+material AOW/SelectMenu : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Selection_TABLE.png
+            }
+        }
+    }
+}
+
+material AOW/BaseTable : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_BaseTable.png
+            }
+        }
+    }
+}
+
+material AOW/CommandTable : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_CommandTable.png
+            }
+        }
+    }
+}
+
+material AOW/SelectedCitizenCard : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_CitizenCardSelected.png
+            }
+        }
+    }
+}
+
+material AOW/CitizenCard : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_CitizenCard.png
+            }
+        }
+    }
+}
+
+material AOW/CitizenCardClicked : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_CitizenCardClicked.png
+            }
+        }
+    }
+}
+
+material AOW/GreenButtonClicked : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_ButtonPositiveClicked.png
+            }
+        }
+    }
+}
+
+material AOW/RedButtonClicked : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_ButtonengitiveClicked.png
+            }
+        }
+    }
+}
+
+material AOW/GreenButton : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_ButtonPositive.png
+            }
+        }
+    }
+}
+
+material AOW/RedButton : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_Buttonengitive.png
+            }
+        }
+    }
+}
+
+material AOW/ScrollBarUP : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_scr-up.png
+            }
+        }
+    }
+}
+
+material AOW/ScrollBarDOWN : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_scr-down.png
+            }
+        }
+    }
+}
+
+material AOW/ScrollBar : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_scr.png
+            }
+        }
+    }
+}
+
+material AOW/LeftButton : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_LeftOut.png
+            }
+        }
+    }
+}
+
+material AOW/RightButton : AOW/Base
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture AOW_RightIN.png
+            }
+        }
+    }
+}
